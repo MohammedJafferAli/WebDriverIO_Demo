@@ -1,0 +1,37 @@
+Work with WebDriverIO
+
+Create a new local folder and open in VS code
+Open a new terminal and run -> npm init wdio . 
+Customize the framework based on the requirement, so it will add all the required dependencies to the package.json then build it using npm install command
+
+For Cucumber framework
+1. Create a feature file with .feature extention -> Write the feature name and some scenarios using Gherkin syntax
+2. Creat a step definition file for that feature with .js -> Copy all the scenarios {given when and Then}, generate the step definition either running the
+Cucumber.cmd in node_modules or use cuke extention
+3. Copy the steps and paste it -> Ready to write the webdriver code to automate the actions
+4. Learn the basic commands and WebDriverIO functions 
+5. Use proper awaits and wait commands inOrder to run the script smoothly
+
+Want to change the browser using Selenium Standalone?
+Add the below dependencies in package.json file and buil it 
+1.The easiest way is to keep @wdio/selenium-standalone-service as a devDependency in your package.json. or use "npm install @wdio/selenium-standalone-service --save-dev" in terminal
+2. Go to wdio.conf.js -> services: ['chromedriver'] change chromedriver into "selenium-standalone"
+3. Go to wdio.conf.js -> capabilities: [{
+        // capabilities for local browser web tests
+        browserName: 'chrome' // or "firefox", "microsoftedge", "safari"
+    }], -> change it to firefox
+
+
+
+
+
+
+
+
+Useful links
+
+Learn All kind of automation -> http://makeseleniumeasy.com/
+
+Working with JavaScript ALerts
+use this -> http://v4.webdriver.io/api/protocol/alertAccept.html
+    
