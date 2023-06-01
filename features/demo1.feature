@@ -4,6 +4,6 @@ Feature: WebDriverIO Basics
 
    //Scenario: Log with valid credential
 
-   Given Launch the Application
-   When I Enter userName and passWord
-   Then I should land on Home Page
+  # Given Launch the Application
+  # When I Enter userName and passWord
+  # Then I should land on Home Page

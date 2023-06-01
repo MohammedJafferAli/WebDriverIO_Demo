@@ -1,5 +1,6 @@
 import { Given, When, Then } from '@wdio/cucumber-framework';
 
+
 Given(/^Launch testing application$/, async () => {
 
     await browser.url('http://the-internet.herokuapp.com/javascript_alerts');
@@ -20,6 +21,7 @@ When(/^Check JavaScript alert button$/, async () => {
     const alerts = $$("//div[@class='example']//ul/li");
 
     (await alerts[0]).$('button').click() // JS Alert
+    console.log(await browser.isAlertOpen()) //Return true
     await browser.pause(5000);
     await browser.acceptAlert();
     await browser.pause(5000);
@@ -43,6 +45,8 @@ Then(/^Alert prompt confirmation should popup$/, async () => {
     
     await browser.pause(5000);
     console.log(await browser.getAlertText())
+
+    
     await browser.sendAlertText('Jaffer');
     await browser.pause(5000);
     await browser.acceptAlert();

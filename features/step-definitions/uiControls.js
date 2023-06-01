@@ -24,5 +24,4 @@ await browser.pause(5000);
 Then(/^It should do the respective action$/,async () => {
      return true;
 
-
 });

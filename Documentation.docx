@@ -12,7 +12,7 @@ Cucumber.cmd in node_modules or use cuke extention
 4. Learn the basic commands and WebDriverIO functions 
 5. Use proper awaits and wait commands inOrder to run the script smoothly
 
-Want to change the browser using Selenium Standalone?
+Q1: Want to change the browser using Selenium Standalone?
 Add the below dependencies in package.json file and buil it 
 1.The easiest way is to keep @wdio/selenium-standalone-service as a devDependency in your package.json. or use "npm install @wdio/selenium-standalone-service --save-dev" in terminal
 2. Go to wdio.conf.js -> services: ['chromedriver'] change chromedriver into "selenium-standalone"
@@ -23,15 +23,21 @@ Add the below dependencies in package.json file and buil it
 
 
 
+Q2: 
+Check UI Controls file for radio button
+check UIActions file for for scrolling the page, moving and work with tables
+check popup modal to work with JS ALerts
+check dropdown to work with static and dynamic dropdown
 
 
+Q3: Need autocompletion in your framework add jsconfig.json in project level
 
 
 
 Useful links
 
 Learn All kind of automation -> http://makeseleniumeasy.com/
-
 Working with JavaScript ALerts
 use this -> http://v4.webdriver.io/api/protocol/alertAccept.html
-    
+To Add Debugger to your framework use this https://webdriver.io/docs/debugging/
+
