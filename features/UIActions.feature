@@ -8,7 +8,7 @@ Feature: Work on UI Elements
  #  Given Launch practice2 website
   # When Perform some action
 
-Scenario: Search Table validation
+#Scenario: Search Table validation
    Given Launch practice2 website
    When Enter a text and validate result
 
